@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Keith Miller Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css">
+    
+<style>
+form {
+  margin: 2em auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-family:'roboto',helvetica,sans-serif;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+  font-size:16px;
+  padding:10px;
+  font-family:'roboto',helvetica,sans-serif;
+}
+</style>
+</head>
+    
+<header>
+
+    <h1>Keith Miller</h1>
+        <p class="quote">“<em>Simplicity is not the goal. It is the by-product of a good idea and modest expectations.</em>” - <strong>Paul Rand</strong></p>
+    <div class="menu">
+        <a href="/index.html">design</a>
+        <a href="/about.html">about</a>
+        <a href="/connect.html">connect</a>
+    </div>  
+</header>
+    
+<body>
+<form action="/my-handling-form-page" method="post">
+    
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+<div class="button">
+  <button type="submit">Send your message</button>
+</div>
+    
+</form>
+</body>
+        
+</html>
